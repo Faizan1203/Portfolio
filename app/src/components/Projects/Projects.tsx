@@ -1,7 +1,10 @@
 import ProjectCard, { ProjectProps } from './ProjectCard/ProjectCard';
 import { Container, Row, Col } from 'react-bootstrap';
-import adminpanel from '../../Assets/images/adminpanel.jpg';
-import olximage from '../../Assets/images/olximage.jpg';
+import recipe from '../../Assets/images/recipe.png';
+import finance from '../../Assets/images/finance.png';
+import planner from '../../Assets/images/hardnut.png';
+import blogger from '../../Assets/images/blogger.png';
+import ecommerce from '../../Assets/images/ecommerce.png';
 import './Projects.css';
 import Loader from '../Loader/Loader';
 import { useEffect, useState } from 'react';
@@ -9,50 +12,50 @@ import { useEffect, useState } from 'react';
 function Projectlist() {
   const ProjectDataArray: ProjectProps[] = [
     {
-      imgPath: adminpanel,
+      imgPath: finance,
       title: 'Stock Market Simulator',
-      ghLink: 'https://github.com/Faizan1203/Stock-Market-Simulator',
       description:
-        'User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.',
+        'Created an interactive stock market simulator that uses APIs to access live stock information in the New York Stock Exchange. Implemented a virtual portfolio that displays detailed statistics of stock purchases and history. This was done using Flask, Python, HTML, CSS, SQL.',
+      ghLink: 'https://github.com/Faizan1203/Stock-Market-Simulator',
       demoLink: 'https://youtu.be/yrsUpW8plHI',
     },
     {
-      imgPath: olximage,
+      imgPath: recipe,
       title: 'Recipe Book',
       description:
-        'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
+        'Developed a single-page application using Angular where users can create various recipes and refer back to them in the future. This was done using Angular, TypeScript, HTML, CSS, Firebase Realtime Database',
       ghLink: 'https://github.com/Faizan1203/Angular-Recipe-Book',
       demoLink: 'https://youtu.be/nmyKRAyAv_w',
     },
     {
-      imgPath: olximage,
+      imgPath: planner,
       title: 'Planner',
       description:
-        'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
+        'Developed a website for students to create their goals, plan, study, and achieve them. This was made using Django framework, Python, JavaScript, HTML, CSS, SQL.',
       ghLink: 'https://github.com/Faizan1203/HardNut',
       demoLink: 'https://youtu.be/HZkOODibc1c',
     },
     {
-      imgPath: olximage,
+      imgPath: blogger,
       title: 'Blogger',
       description:
-        'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
+        'A website where users can share their knowledge and solve queries by interacting with each other. This was made using Node JS, MongoDB, Express, JavaScript, EJS, CSS.',
       ghLink: 'https://github.com/Faizan1203/Blogger',
       demoLink: 'https://youtu.be/IEPGRZKLCxo',
     },
     {
-      imgPath: olximage,
+      imgPath: ecommerce,
       title: 'Ecommerce',
       description:
-        'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
+        'A website that will allow users to post auctions, place bids, comment on listings, and add listings to a watch list. This was made using Django framework, Python, JavaScript, HTML, CSS, SQL.',
       ghLink: 'https://github.com/Faizan1203/E-Commerce',
       demoLink: 'https://youtu.be/qF9SPP5sr0g',
     },
     {
-      imgPath: olximage,
-      title: 'Personal Website',
+      imgPath: ecommerce,
+      title: 'Portfolio Website',
       description:
-        'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
+        'A website where I can provide the details about my software development career. This was made using ReactJS, EmailJS, React Bootstrap, React Hook Forms.',
       ghLink: 'https://github.com/Faizan1203/Portfolio',
       demoLink: '',
     },
@@ -80,7 +83,11 @@ function Projectlist() {
               projects. Please do feel free to read away and also look at the
               github repositories. If you want to see a demo of these, then
               please visit my &nbsp;
-              <a href="https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ"
+                target="_blank"
+                rel="noreferrer"
+              >
                 youtube
               </a>{' '}
               &nbsp;channel where I have uploaded the demo of each and every

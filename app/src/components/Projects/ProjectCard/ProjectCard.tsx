@@ -23,7 +23,7 @@ function ProjectCard(project: ProjectProps) {
           <Col md={6}>
             <Button
               className="viewbtn"
-              variant="primary"
+              variant="outline-secondary"
               href={project.ghLink}
               target="_blank"
               rel="noreferrer"
@@ -34,7 +34,7 @@ function ProjectCard(project: ProjectProps) {
           <Col md={6}>
             <Button
               className="viewbtn"
-              variant="primary"
+              variant="outline-secondary"
               href={project.demoLink}
               target="_blank"
               rel="noreferrer"

@@ -202,7 +202,7 @@ function ContactForm() {
                   </Form.Group>
                 )}
               />
-              <Button variant="primary" type="submit">
+              <Button variant="outline-secondary" type="submit">
                 Send Message
               </Button>
             </Col>
