@@ -10,49 +10,52 @@ function Projectlist() {
   const ProjectDataArray: ProjectProps[] = [
     {
       imgPath: adminpanel,
-      title: 'Dashboard Panel',
-      ghLink: 'https://rahul-dashboard-pannel.netlify.app',
+      title: 'Stock Market Simulator',
+      ghLink: 'https://github.com/Faizan1203/Stock-Market-Simulator',
       description:
         'User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration.',
-      isBlog: false,
-      demoLink: '',
+      demoLink: 'https://youtu.be/yrsUpW8plHI',
     },
     {
       imgPath: olximage,
-      isBlog: false,
-      title: 'Olx-Clone',
+      title: 'Recipe Book',
       description:
         'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
-      ghLink: 'https://olx-clone-rahul.netlify.app/',
-      demoLink: '',
+      ghLink: 'https://github.com/Faizan1203/Angular-Recipe-Book',
+      demoLink: 'https://youtu.be/nmyKRAyAv_w',
     },
     {
       imgPath: olximage,
-      isBlog: false,
-      title: 'Olx-Clone',
+      title: 'Planner',
       description:
         'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
-      ghLink: 'https://olx-clone-rahul.netlify.app/',
-      demoLink: '',
+      ghLink: 'https://github.com/Faizan1203/HardNut',
+      demoLink: 'https://youtu.be/HZkOODibc1c',
     },
     {
       imgPath: olximage,
-      isBlog: false,
-      title: 'Olx-Clone',
+      title: 'Blogger',
       description:
         'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
-      ghLink: 'https://olx-clone-rahul.netlify.app/',
-      demoLink: '',
+      ghLink: 'https://github.com/Faizan1203/Blogger',
+      demoLink: 'https://youtu.be/IEPGRZKLCxo',
     },
     {
       imgPath: olximage,
-      isBlog: false,
-      title: 'Olx-Clone',
+      title: 'Ecommerce',
       description:
         'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
-      ghLink: 'https://olx-clone-rahul.netlify.app/',
+      ghLink: 'https://github.com/Faizan1203/E-Commerce',
+      demoLink: 'https://youtu.be/qF9SPP5sr0g',
+    },
+    {
+      imgPath: olximage,
+      title: 'Personal Website',
+      description:
+        'Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks.',
+      ghLink: 'https://github.com/Faizan1203/Portfolio',
       demoLink: '',
-    }
+    },
   ];
 
   const [load, updateLoad] = useState(true);
@@ -70,15 +73,18 @@ function Projectlist() {
       <Loader load={load} />
       <Container fluid className="project-section">
         <Container>
-          <Row
-            style={{ justifyContent: 'center', paddingBottom: '10px' }}
-          >
+          <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
             <h2 className="text-center projects-head">Projects</h2>
-            <p className="text-center">
-              lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Pariatur, cupiditate! Molestiae placeat architecto nihil obcaecati
-              illum minima incidunt dolores? Officia consectetur optio non totam
-              cum eos soluta ipsa et quod.
+            <p className="text-center projectspara">
+              Hey there! Looks like you've stumbled upon the portfolio of my
+              projects. Please do feel free to read away and also look at the
+              github repositories. If you want to see a demo of these, then
+              please visit my &nbsp;
+              <a href="https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ" target="_blank" rel="noreferrer">
+                youtube
+              </a>{' '}
+              &nbsp;channel where I have uploaded the demo of each and every
+              project.
             </p>
 
             {ProjectDataArray.map((project, index) => (

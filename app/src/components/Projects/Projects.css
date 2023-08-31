@@ -15,6 +15,9 @@
 }
 .project-section {
   position: relative !important;
+    .projectspara{
+      padding: 30px 0;
+    }
 }
 .project-card {
   padding-bottom: 50px !important;
@@ -71,13 +74,6 @@
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
-}
-
-
-@media (max-width: 767px) {
-  .project-section {
-
-  }
 }
 
 .projects-head {
