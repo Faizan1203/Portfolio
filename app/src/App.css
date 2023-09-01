@@ -22,7 +22,7 @@ html {
   height: 100%;
   z-index: 999999;
   background-color: #fbd786;
-  background-image: url(../src/assets/bars.svg);
+  background-image: url(../src/Assets/bars.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
