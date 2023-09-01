@@ -14,7 +14,7 @@ function ProjectCard(project: ProjectProps) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={project.imgPath} alt="card-img" />
-      <Card.Body>
+      <Card.Body style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
         <Card.Title>{project.title}</Card.Title>
         <Card.Text style={{ textAlign: 'justify' }}>
           {project.description}
