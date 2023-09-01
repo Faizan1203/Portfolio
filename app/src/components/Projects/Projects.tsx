@@ -1,11 +1,11 @@
 import ProjectCard, { ProjectProps } from './ProjectCard/ProjectCard';
 import { Container, Row, Col } from 'react-bootstrap';
-import recipe from '../../Assets/images/recipe.png';
-import finance from '../../Assets/images/finance.png';
-import planner from '../../Assets/images/hardnut.png';
-import blogger from '../../Assets/images/blogger.png';
-import ecommerce from '../../Assets/images/ecommerce.png';
-import portfolio from '../../Assets/images/portfolio.png'
+import recipe from '../../assets/images/recipe.png';
+import finance from '../../assets/images/finance.png';
+import planner from '../../assets/images/hardnut.png';
+import blogger from '../../assets/images/blogger.png';
+import ecommerce from '../../assets/images/ecommerce.png';
+import portfolio from '../../assets/images/portfolio.png'
 import './Projects.css';
 import Loader from '../Loader/Loader';
 import { useEffect, useState } from 'react';

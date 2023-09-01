@@ -82,7 +82,7 @@
   opacity: 0.9 !important;
 }
 .logo {
-  background-image: url(../../Assets/logo-f.png);
+  background-image: url(../../assets/logo-f.png);
   background-size: cover;
   width: 90px;
   height: 80px;
