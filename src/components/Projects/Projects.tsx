@@ -5,7 +5,7 @@ import finance from '../../Assets/images/finance.png';
 import planner from '../../Assets/images/hardnut.png';
 import blogger from '../../Assets/images/blogger.png';
 import ecommerce from '../../Assets/images/ecommerce.png';
-import portfolio from '../../Assets/images/portfolio.png'
+import portfolio from '../../Assets/images/portfolio.png';
 import './Projects.css';
 import Loader from '../Loader/Loader';
 import { useEffect, useState } from 'react';
@@ -80,10 +80,9 @@ function Projectlist() {
           <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
             <h2 className="text-center projects-head">Projects</h2>
             <p className="text-center projectspara">
-              Looks like you've stumbled upon the portfolio of my
-              projects. Please do feel free to read away and also look at the
-              github repositories. If you want to see a demo of these, then
-              please visit my &nbsp;
+              Please do feel free to read away and also look at the github
+              repositories. If you want to see a demo of these, then please
+              visit my &nbsp;
               <a
                 href="https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ"
                 target="_blank"
