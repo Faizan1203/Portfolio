@@ -52,7 +52,7 @@ function Home() {
             </button>
             <button
               onClick={() => {
-                window.open('linkedin.com/in/faizan-syed-8325941b5');
+                window.open('https://linkedin.com/in/faizan-syed-8325941b5');
               }}
               className="socailmediabtn"
             >
