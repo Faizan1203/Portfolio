@@ -20,10 +20,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <Router>
         <Loader load={load} />
-        <div className="App" id={load ? 'no-scroll' : 'scroll'}>
+        <div id={load ? 'no-scroll' : 'scroll'}>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />

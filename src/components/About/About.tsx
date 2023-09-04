@@ -71,7 +71,6 @@ function About() {
     'Typescript',
     'CSS',
     'Javascript',
-    
   ];
 
   const skillsImage = (skill: string) => {
@@ -115,8 +114,6 @@ function About() {
         return python;
       case 'swift':
         return swift;
-      // case 'objectivec':
-      //   return objectivec;
       case 'aws':
         return aws;
       case 'django':
@@ -149,13 +146,19 @@ function About() {
               About <span>Me</span>
             </h2>
             <p className="aboutdetails">
-              I am a Computer Engineering student in my 2B term at University of
-              Waterloo. I am a self-taught Web Developer. I build websites with
-              a focus on providing the experience for everyone using them and
-              responsiveness. I love problem solving, and care highly about
-              writing maintainable code. I am extremely excited about the
-              automobile industry and as a matter of fact I have worked as a
-              coop at Autotrader and Ford Motor Company in the past.
+              I am a dedicated and passionate computer science and engineering
+              student at the University of Waterloo, driven by a deep-rooted
+              love for technology and innovation. From a young age, I've been
+              captivated by the possibilities of the digital world, inspired by
+              iconic figures like Tony Stark. My journey has been a fusion of
+              diverse experiences, from crafting robots with Lego Mindstorms to
+              studying in the United States, which has shaped both my technical
+              skills and communication abilities. Now, as I embark on my
+              academic journey at one of Canada's top universities, my goal is
+              to push boundaries, solve complex problems, and contribute to the
+              ever-evolving landscape of technology. Welcome to my portfolio,
+              where you can explore my projects and witness my passion for
+              creating meaningful solutions that make a difference.
             </p>
             <div className="skillsContainer">
               <div className="skill--scroll">

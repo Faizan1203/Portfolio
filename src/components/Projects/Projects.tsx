@@ -80,9 +80,12 @@ function Projectlist() {
           <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
             <h2 className="text-center projects-head">Projects</h2>
             <p className="text-center projectspara">
-              Please do feel free to read away and also look at the github
-              repositories. If you want to see a demo of these, then please
-              visit my &nbsp;
+              Explore a curated collection of my hands-on projects, each a
+              testament to my problem-solving skills and creativity. From web
+              development ventures to innovative coding projects, this portfolio
+              showcases my dedication to bringing ideas to life in the digital
+              realm. If you want to see a demo of these, then please visit my
+              &nbsp;
               <a
                 href="https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ"
                 target="_blank"

@@ -20,12 +20,10 @@ const Contact = () => {
       <Container className="contactpage">
         <h2 className="contacthead text-center">Get In Touch</h2>
         <p className="contactpara">
-          I am currently searching for coop opportunities as a Software
-          developer.
-          <br />
-          If there is any vacancy my inbox is always open. Whether you have any
-          further questions or just want to say hi.
-          <br /> I will try my best to get back to you!
+          I'm actively seeking co-op opportunities as a software developer. My
+          inbox is always open for any potential vacancies, inquiries, or just a
+          friendly "hello". I'm committed to promptly responding to your
+          messages.
         </p>
         <ContactForm />
         <span></span>

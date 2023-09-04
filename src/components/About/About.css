@@ -31,16 +31,14 @@
   }
   .aboutdetails {
     font-size: 1.1em !important;
-    font-family: 'Poppins';
+    text-align: justify;
   }
   .skilllist li {
     letter-spacing: 1px;
-    font-family: 'Poppins';
   }
   .skilllist {
     font-weight: 600;
     list-style-type: none;
-    font-family: 'Poppins';
   }
   .skilllist li:hover {
     transform: scale(1.05);

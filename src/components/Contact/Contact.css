@@ -19,7 +19,6 @@
   font-size: 16px;
   letter-spacing: 1px;
   padding-bottom: 1rem;
-  font-family: 'Poppins';
 }
 .contactbtn {
   display: block;
@@ -32,19 +31,6 @@
 }
 .contactbtn:hover {
   background-color: rgba(51, 51, 51, 0.2);
-}
-.copyright {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Poppins';
-}
-.copyright span {
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 @media (max-width: 767px) {
   .contactpara br {
