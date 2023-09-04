@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { AiFillGithub, AiFillYoutube } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import './Home.css';
@@ -42,32 +42,49 @@ function Home() {
                 deleteSpeed: 30,
               }}
             />
-            <button
-              onClick={() => {
-                window.open('https://github.com/Faizan1203');
-              }}
-              className="socailmediabtn"
+
+            <OverlayTrigger
+              placement={'bottom'}
+              overlay={<Tooltip>GitHub</Tooltip>}
             >
-              <AiFillGithub className="icon" />
-            </button>
-            <button
-              onClick={() => {
-                window.open('https://linkedin.com/in/faizan-syed-8325941b5');
-              }}
-              className="socailmediabtn"
+              <button
+                onClick={() => {
+                  window.open('https://github.com/Faizan1203');
+                }}
+                className="socailmediabtn"
+              >
+                <AiFillGithub className="icon" />
+              </button>
+            </OverlayTrigger>
+
+            <OverlayTrigger
+              placement={'bottom'}
+              overlay={<Tooltip>LinkedIn</Tooltip>}
             >
-              <FaLinkedinIn className="icon" />
-            </button>
-            <button
-              onClick={() => {
-                window.open(
-                  'https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ'
-                );
-              }}
-              className="socailmediabtn"
+              <button
+                onClick={() => {
+                  window.open('https://linkedin.com/in/faizan-syed-8325941b5');
+                }}
+                className="socailmediabtn"
+              >
+                <FaLinkedinIn className="icon" />
+              </button>
+            </OverlayTrigger>
+            <OverlayTrigger
+              placement={'bottom'}
+              overlay={<Tooltip>YouTube</Tooltip>}
             >
-              <AiFillYoutube className="icon" />
-            </button>
+              <button
+                onClick={() => {
+                  window.open(
+                    'https://www.youtube.com/channel/UCOfAJ36-E-s6z6YFsc8DWDQ'
+                  );
+                }}
+                className="socailmediabtn"
+              >
+                <AiFillYoutube className="icon" />
+              </button>
+            </OverlayTrigger>
           </Col>
 
           <Col md={5}>
