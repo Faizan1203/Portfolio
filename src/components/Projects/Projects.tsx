@@ -12,14 +12,14 @@ import { useEffect, useState } from 'react';
 
 function Projectlist() {
   const ProjectDataArray: ProjectProps[] = [
-    {
-      imgPath: portfolio,
-      title: 'Portfolio Website',
-      description:
-        'A website where I can provide the details about my software development career. This was made using ReactJS, EmailJS, React Bootstrap, React Hook Forms.',
-      ghLink: 'https://github.com/Faizan1203/Portfolio',
-      demoLink: '',
-    },
+    // {
+    //   imgPath: portfolio,
+    //   title: 'Portfolio Website',
+    //   description:
+    //     'A website where I can provide the details about my software development career. This was made using ReactJS, EmailJS, React Bootstrap, React Hook Forms.',
+    //   ghLink: 'https://github.com/Faizan1203/Portfolio',
+    //   demoLink: '',
+    // },
     {
       imgPath: finance,
       title: 'Stock Market Simulator',

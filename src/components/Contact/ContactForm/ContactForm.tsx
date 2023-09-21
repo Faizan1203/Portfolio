@@ -3,8 +3,8 @@ import './ContactForm.css';
 import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 interface ContactFormData {
   firstName: string;
@@ -14,7 +14,7 @@ interface ContactFormData {
   message: string;
 }
 
-function ContactForm() {
+const ContactForm = () => {
   const [emailSentSuccess, setEmailSentSuccess] = useState<boolean>(false);
   const [emailSentFail, setEmailSentFail] = useState<boolean>(false);
 
@@ -35,6 +35,7 @@ function ContactForm() {
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<ContactFormData>({
     defaultValues: {
@@ -46,7 +47,6 @@ function ContactForm() {
     },
     resolver: yupResolver(schema),
   });
-
   const onSubmit = async (data: ContactFormData) => {
     console.log(data);
 
@@ -66,13 +66,11 @@ function ContactForm() {
       );
       setEmailSentSuccess(true);
       console.log('Email sent successfully:', response);
-      setTimeout(() => {
-        window.location.reload();
-      }, 5000);
     } catch (error) {
       console.error('Error sending email:', error);
       setEmailSentFail(true);
     }
+    reset();
   };
 
   return (
@@ -97,7 +95,7 @@ function ContactForm() {
             window.location.reload();
           }}
         >
-          Sorry for the inconveniece as we failed to send the email. Please try
+          Sorry for the inconveniece. Please try
           again another time.
         </Alert>
       ) : (

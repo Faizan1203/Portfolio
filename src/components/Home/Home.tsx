@@ -5,6 +5,7 @@ import './Home.css';
 import Typewriter from 'typewriter-effect';
 import { useEffect, useState } from 'react';
 import Loader from '../Loader/Loader';
+import Marquee from 'react-fast-marquee';
 
 function Home() {
   const [load, updateLoad] = useState(true);
@@ -22,6 +23,25 @@ function Home() {
     'Front End Developer',
     'Student',
   ];
+
+  const welcomeTranslations = [
+    'Welcome',
+    'स्वागत है',
+    'مرحباً',
+    'Bienvenido',
+    'Bienvenue',
+    'Willkommen',
+    'Benvenuto',
+    'Bem-vindo',
+    'Welkom',
+    'Välkommen',
+    'Добро пожаловать',
+    '欢迎',
+    'ようこそ',
+    '환영합니다',
+    'Καλώς ήρθατε',
+    'ברוך הבא',
+  ];
   return (
     <div className="homepagebackground">
       <Loader load={load} />
@@ -29,9 +49,23 @@ function Home() {
         <Row>
           <Col md={7}>
             <h2 className="headtext">
-              Hello <span className="wave">👋 </span>
+              <Marquee
+                gradient={false}
+                speed={60}
+                pauseOnHover={true}
+                delay={0}
+                play={true}
+                direction="left"
+              >
+                {welcomeTranslations.map((translation, id) => (
+                  <div key={id}>
+                    <p>{translation} &nbsp;</p>
+                  </div>
+                ))}
+              </Marquee>
+              
             </h2>
-            <h2 className="nametext">I'm Faizan Syed</h2>
+            <h2 className="nametext">I'm Faizan Syed <span className="wave">👋 </span></h2>
             <span></span>
 
             <Typewriter

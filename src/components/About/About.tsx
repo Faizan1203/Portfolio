@@ -47,30 +47,30 @@ function About() {
   const skillsData = [
     'Angular',
     'React',
-    'MaterialUI',
-    'Bootstrap',
-    'Tailwind',
-    'Figma',
     'AWS',
     'Azure',
+    'GCP',
     'Git',
+    'Django',
+    'Python',
+    'Swift',
+    'Typescript',
+    'Java',
+    'Javascript',
     'C',
     'Canva',
     'C++',
     'C#',
-    'Django',
-    'GCP',
-    'Java',
     'Markdown',
     'MongoDB',
     'NextJs',
     'HTML',
-    'Python',
     'SQLite',
-    'Swift',
-    'Typescript',
     'CSS',
-    'Javascript',
+    'MaterialUI',
+    'Bootstrap',
+    'Tailwind',
+    'Figma',
   ];
 
   const skillsImage = (skill: string) => {
@@ -143,7 +143,7 @@ function About() {
         <Row>
           <Col md={7}>
             <h2 className="aboutmetext text-center">
-              About <span>Me</span>
+               <span>About Me</span>
             </h2>
             <p className="aboutdetails">
               I am a dedicated and passionate computer science and engineering
@@ -165,7 +165,7 @@ function About() {
                 <Marquee
                   gradient={false}
                   speed={60}
-                  pauseOnClick={true}
+                  pauseOnHover={true}
                   delay={0}
                   play={true}
                   direction="left"

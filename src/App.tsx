@@ -6,7 +6,7 @@ import Loader from './components/Loader/Loader';
 import Header from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+import Contact from './components/Contact/ContactPage';
 
 function App() {
   const [load, updateLoad] = useState(true);
