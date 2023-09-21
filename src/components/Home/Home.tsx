@@ -53,7 +53,7 @@ function Home() {
                 gradient={false}
                 speed={60}
                 pauseOnHover={true}
-                delay={0}
+                delay={1}
                 play={true}
                 direction="left"
               >
